@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Azure Iot Hub Demo</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+    <body>
+    	<h1>Azure Iot Hub Demo</h1>
+    	デバイスを選択してください
+    	<form name = "devForm">
+    		<select name="devSelect">
+    			<option value="value01">シミュレータ</option>
+    			<option value="value02">実機</option>
+    		</select>
+    	</form>
+    	<input type = "button" id = "despBtn" value="表示" onclick="onButtonClick();" />
+    	<div id ="output"></div>
+    </body>
+</html>
