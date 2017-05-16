@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+  <title>Azure Iot Hub Demo</title>
+  <link rel='stylesheet' href='/stylesheets/style.css'>
+  <script src = "https://code.jquery.com/jquery-2.2.1.js"></script>
+  <script src ="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+
+</head>
+<body onLoad="draw()">
+  <center>
+    <h1 class = "header">Azure Iot Hub Demo</h1>
+  </center>
+  <center>
+    <form>
+      <div class ="selectDevice">
+        <div class = "device" style="float:left">Select device</div>
+        <select id="devSelect" style="float:left">
+          <option value="value01">Simulator</option>
+          <option value="value02">Real device</option>
+        </select>
+        <div class = "selectSystem">
+          <div style="float:left">Normal system</div>
+          <input type="radio" name="System" value="Normal" checked="checked" style="float:left"/>
+          <br>
+          <div style="float:left">Abormal system</div>
+          <input type="radio" name="System" value="Abnormal" style="float:left"/>
+        </div>
+        <input type = "button" id = "dispBtn" style="float:left" value="send" href="/javascripts/public.js" onclick="onButtonClick();" /><br>
+      </div>
+    </form>
+  </center>
+  <div class ="clear"></div>
+
+
+  <div class = "graph">
+    <div class="tmp" style="float:left">
+      <div class="g_header">Temperature</div>
+      <div id="tmpChart" class="chart-container">  </div>
+    </div>
+
+    <div class="humidity" style="float:left">
+      <div class ="g_header">Humidity</div>
+      <div id="humChart" class="chart-container" float:left>  </div>
+    </div>
+
+    <div class="pressure" style="float:left">
+      <div class = "g_header">Pressure</div>
+      <div id="preChart" class="chart-container" float:left>  </div>
+    </div>
+  </div>
+  <div class ="clear"></div>
+
+  <center>
+    <div class = "dataSending">
+      <div class ="sendingData">Sending data</div>
+      <textarea name="sending" rows="10" cols="100"></textarea>
+      <div>
+      </center>
+      <div class ="clear"></div>
+      <script type = "text/javascript" src="/javascripts/public.js"></script>
+
+    </body>
+    </html>

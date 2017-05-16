@@ -1,8 +1,42 @@
 body {
-  padding: 100px;
+  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color :#404040;
+  color: #ffffff;
+  width:1000px;
+  margin-right: auto;
+  margin-left : auto;
+}
+.header{
+  font-size:400%;
+}
+.device{
+  font-size:200%;
+  /*margin: 20px;*/
 }
 
-a {
-  color: #00B7FF;
+.selectDevice{
+
+}
+.g_header{
+  font-size:250%;
+}
+#devSelect{
+  font-size:250%;
+}
+
+#dispBtn{
+  font-size:250%
+}
+.sendingData{
+  font-size:250%
+}
+.clear{
+    clear:both;
+}
+.graph{
+  text-align: center;
+}
+.selectSystem{
+  font-size: 150%;
 }
